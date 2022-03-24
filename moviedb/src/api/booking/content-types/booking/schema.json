@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "booking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bid": {
+      "type": "uid"
+    },
+    "Cid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "tid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theatre.theatre"
+    },
+    "mov_code": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::movie.movie"
+    },
+    "sid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seat.seat"
+    },
+    "booking_date": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "invoice_number": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "text"
+    }
+  }
+}

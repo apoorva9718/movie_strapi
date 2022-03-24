@@ -1,0 +1,9 @@
+'use strict';
+
+/**
+ * theatre-occ service.
+ */
+
+const { createCoreService } = require('@strapi/strapi').factories;
+
+module.exports = createCoreService('api::theatre-occ.theatre-occ');

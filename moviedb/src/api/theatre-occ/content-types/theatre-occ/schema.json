@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "theatre_occs",
+  "info": {
+    "singularName": "theatre-occ",
+    "pluralName": "theatre-occs",
+    "displayName": "theatre_occ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "screen_num": {
+      "type": "integer"
+    },
+    "num_seats": {
+      "type": "integer"
+    },
+    "seats_vacant": {
+      "type": "integer"
+    },
+    "Tid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theatre.theatre"
+    },
+    "sid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seat.seat"
+    }
+  }
+}
